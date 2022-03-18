@@ -90,7 +90,7 @@ if(isset($_POST['reportbutton'])){
                                   $fileDestination  = "../Image_Report_Database/".$ImageFullName;            //Build up file destination
 
                                   //Preparing Query for Inserting Data in the Database
-                                  $sql = "INSERT INTO report_detail(user_mobile_num, user_name, reported_number, remarks, Report_Screenshot, Report_ScreenshotName, Report_count)
+                                  $sql = "INSERT INTO report_details(user_mobile_num, user_name, reported_number, remarks, Report_Screenshot, Report_ScreenshotName, Report_count)
                                           VALUES(?,?,?,?,?,?,?);";
 
                                   if(!mysqli_stmt_prepare($stmt,$sql)){ //ERROR 404 for unable to upload
