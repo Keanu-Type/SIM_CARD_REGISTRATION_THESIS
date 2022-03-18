@@ -1,6 +1,6 @@
 <?php
   require "navbar.php";
-  include_once 'indexphp/PHPBASEuserprofile.inc.php';
+  include_once 'dbh/EndUser.inc.php';
 
   $SimCardNumber = $_SESSION['UserNumber'] ;
   $LastName      = $_SESSION['UserLast']  ;
@@ -31,7 +31,7 @@
     <div class='row'>
       <div class='col-md-6 iconn'>
         <!-- COLUMN 1 -->
-        <form class='' id='form' action='userprofile/BackEnd_Report.php' method='post' enctype='multipart/form-data'>
+        <form class='' id='form' action='UserprofileBackEnd/BackEnd_Report.php' method='post' enctype='multipart/form-data'>
           <div class='infodiv1'>
             <p class='labelings'>Name</p>
             <input type='text' name='VictName' value='$FirstName $LastName $MiddleName $Suffix 'id='usernamee' class='form-control' required>
@@ -99,7 +99,7 @@
 
 //REPORT PAGE
     echo "
-    <form class='' id='form' action='userprofile/Back_End_User_Profile.php' method='POST'>
+    <form class='' id='form' action='UserprofileBackEnd/Back_End_User_Profile.php' method='POST'>
     <div class='row'>
 
       <div class='col-md-4 infocol1'>

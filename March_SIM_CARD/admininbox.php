@@ -1,5 +1,5 @@
 <?php
-  require 'includes/dbh.inc.php';
+  require 'dbh/EndUser.inc.php';
   $sql = "SELECT * FROM report_details";
   $result = mysqli_query($conn, $sql);
   session_start();

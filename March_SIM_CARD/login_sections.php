@@ -45,7 +45,7 @@
       <?php
           if (isset($_GET['simRetailer'])) {
               echo "<div class='div-for-retail'>
-             <form action='indexphp/sellerlogin.inc.php' method='post' class='form-retail'>
+             <form action='SellerBackEnd/sellerlogin.inc.php' method='post' class='form-retail'>
              <p class='userlogtext'>SIM RETAILER LOGIN</p>";
 
              //BACKEND OF SIM RETAILER LOGIN
@@ -74,7 +74,7 @@
           </div>";
         } elseif (isset($_GET['adminLogin'])) {
           echo " <div class='div-for-retail'>
-                  <form action='indexphp/adminlogin.inc.php' method='post' class='form-retail'>
+                  <form action='AdminBackEnd/adminlogin.inc.php' method='post' class='form-retail'>
                   <p class='userlogtext'>ADMINISTRATOR LOGIN</p>";
 //SELLER LOGIN
                   $fulUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -106,7 +106,7 @@
 //LOGIN USER
           echo "<div class='div-for-retail'>
 
-          <form action='indexphp/index.inc.php' method='post' class='form-retail'>
+          <form action='UserprofileBackEnd/index.inc.php' method='post' class='form-retail'>
 
           <p class='userlogtext'>USER LOGIN</p>
           <input type='tel' name='IndexNumber' class='input-retail' placeholder='Mobile Number ex: +639176578905' required>
